@@ -10,9 +10,9 @@ import com.uce.edu.demo.matriculacion.modelo.Vehiculo;
 public class VehiculoRepositoryImpl implements IVehiculoRepository {
 
 	@Override
-	public void crear(Vehiculo v) {
+	public void insertar(Vehiculo v) {
 		// TODO Auto-generated method stub
-		System.out.println("Se ha creado en la base el vehiculo: " + v);
+		System.out.println("Se ha insertado en la base el vehiculo: " + v);
 	}
 
 	@Override
@@ -20,10 +20,10 @@ public class VehiculoRepositoryImpl implements IVehiculoRepository {
 		// TODO Auto-generated method stub
 		System.out.println("Se ha buscado en la base el vehiculo: " + placa);
 		Vehiculo vehiculo = new Vehiculo();
-		vehiculo.setMarca("Kia");
-		vehiculo.setModelo("Picantos");
+		vehiculo.setMarca("Chevrolet");
+		vehiculo.setModelo("Aveo Family");
 		vehiculo.setPlaca(placa);
-		vehiculo.setPrecio(new BigDecimal(12000));
+		vehiculo.setPrecio(new BigDecimal(13000));
 		vehiculo.setTipo("L");
 		return vehiculo;
 	}

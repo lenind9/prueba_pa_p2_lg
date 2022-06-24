@@ -1,7 +1,5 @@
 package com.uce.edu.demo.matriculacion.service;
 
-import java.math.BigDecimal;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,7 +15,7 @@ public class VehiculoServiceImpl implements IVehiculoService {
 	@Override
 	public void insertarVehiculo(Vehiculo v) {
 		// TODO Auto-generated method stub
-		this.vehiculoRepository.crear(v);
+		this.vehiculoRepository.insertar(v);
 	}
 
 	@Override
@@ -36,12 +34,6 @@ public class VehiculoServiceImpl implements IVehiculoService {
 	public void borrarVehiculo(String placa) {
 		// TODO Auto-generated method stub
 		this.vehiculoRepository.eliminar(placa);
-	}
-
-	@Override
-	public BigDecimal calcularMatricula(String placa, BigDecimal precio) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 }

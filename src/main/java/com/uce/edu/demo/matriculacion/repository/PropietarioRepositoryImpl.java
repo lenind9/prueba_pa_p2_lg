@@ -14,24 +14,19 @@ public class PropietarioRepositoryImpl implements IPropietarioRepository {
 	}
 
 	@Override
-	public Propietario buscar(String cedula) {
-		// TODO Auto-generated method stub
-		System.out.println("Se ha buscado en la base el propietario: " + cedula);
-		Propietario p = new Propietario();
-		p.setCedula(cedula);
-		return p;
-	}
-
-	@Override
-	public void actualizar(Propietario p) {
-		// TODO Auto-generated method stub
-		System.out.println("Se ha actualizado en la base el propietario: " + p);
-	}
-
-	@Override
 	public void eliminar(String cedula) {
 		// TODO Auto-generated method stub
 		System.out.println("Se ha eliminado en la base el propietario: " + cedula);
+	}
+
+	@Override
+	public Propietario consultar(String cedula) {
+		// TODO Auto-generated method stub
+		Propietario propie = new Propietario();
+		propie.setApellido("Guananaga");
+		propie.setNombre("Lenin");
+		propie.setCedula(cedula);
+		return propie;
 	}
 
 }
